@@ -22,7 +22,7 @@ class ExecutionQueue {
     }
   }
 
-  add(Function job) {
+  Future add(Function job) {
     var completer = new Completer();
     this._queue.add(new Item(completer: completer, job: job));
     this._check();
