@@ -12,7 +12,7 @@ class ExecutionQueue {
   List<Item> _queue = [];
   bool _active = false;
 
-  _check() async {
+  void _check() async {
     if (!_active && _queue.length > 0) {
       this._active = true;
       var item = _queue.removeAt(0);
@@ -22,7 +22,7 @@ class ExecutionQueue {
     }
   }
 
-  Future add(Function job) {
+  Future<dynamic> add(Function job) {
     var completer = new Completer();
     this._queue.add(new Item(completer: completer, job: job));
     this._check();
