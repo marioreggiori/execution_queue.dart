@@ -4,7 +4,7 @@ import 'package:execution_queue/execution_queue.dart';
 
 void main() {
   test('queues jobs', () async {
-    final queue = new ExecutionQueue();
+    final queue = ExecutionQueue();
     var a = '';
 
     var b = await queue

@@ -4,7 +4,7 @@ version: 0.0.1
 author: Team netz.chat <dev@netz.chat>
 homepage: https://github.com/netz-chat/execution_queue
 environment:
-    sdk: ">=1.19.0 <2.0.0"
+    sdk: '>=2.0.0-dev.1.2 <2.0.0'
 
 dependencies:
   flutter:

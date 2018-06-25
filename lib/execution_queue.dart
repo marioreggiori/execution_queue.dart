@@ -23,8 +23,8 @@ class ExecutionQueue {
   }
 
   Future<dynamic> add(Function job) {
-    var completer = new Completer();
-    this._queue.add(new Item(completer: completer, job: job));
+    var completer = Completer();
+    this._queue.add(Item(completer: completer, job: job));
     this._check();
     return completer.future;
   }
