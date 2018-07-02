@@ -7,11 +7,11 @@ void main() {
     final queue = ExecutionQueue();
     var a = '';
 
-    var b = await queue
-        .add(() => Future.delayed(Duration(seconds: 4), () => a + 'Hello'));
+    String b = await queue
+        .add<String>(() => Future.delayed(Duration(seconds: 4), () => a + 'Hello'));
 
-    var c = await queue
-        .add(() => Future.delayed(Duration(seconds: 2), () => b + ' World!'));
+    String c = await queue
+        .add<String>(() => Future.delayed(Duration(seconds: 2), () => b + ' World!'));
 
     expect(b, 'Hello');
     expect(c, 'Hello World!');
