@@ -1,10 +1,10 @@
 name: execution_queue
 description: Transaction like execution queue to synchronize asynchronous jobs.
-version: 1.0.1
+version: 1.0.2
 author: Team netz.chat <dev@netzchat.com>
 homepage: https://github.com/netz-chat/execution_queue
 environment:
-    sdk: '>=2.0.0-dev.61.0 <3.0.0'
+    sdk: '>=2.0.0-dev.0.0 <3.0.0'
 
 dev_dependencies:
   test: any
