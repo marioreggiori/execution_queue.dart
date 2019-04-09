@@ -16,7 +16,11 @@ class ExecutionQueue {
     if (!_active && _queue.length > 0) {
       this._active = true;
       var item = _queue.removeAt(0);
-      item.completer.complete(await item.job());
+      try {
+        item.completer.complete(await item.job());
+      } catch (e) {
+        item.completer.completeError(e);
+      }
       this._active = false;
       this._check();
     }
