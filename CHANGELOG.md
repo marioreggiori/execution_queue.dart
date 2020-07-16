@@ -8,3 +8,7 @@
 
 ## [0.0.3] - 2018-06-30
 * code style
+
+
+## [1.0.3] - 2020-07-16
+* better error handling marioreggiori/objectdb#41
