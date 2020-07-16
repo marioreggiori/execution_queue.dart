@@ -17,7 +17,8 @@ class ExecutionQueue {
       this._active = true;
       var item = _queue.removeAt(0);
       try {
-        item.completer.complete(await item.job());
+        var result = await item.job();
+        item.completer.complete(result);
       } catch (e) {
         item.completer.completeError(e);
       }
