@@ -13,7 +13,7 @@ class ExecutionQueue {
   bool _active = false;
 
   void _check() async {
-    if (!_active && _queue.length > 0) {
+    if (!_active && _queue.isNotEmpty) {
       this._active = true;
       var item = _queue.removeAt(0);
       try {
