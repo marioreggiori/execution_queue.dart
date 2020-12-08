@@ -1,6 +1,6 @@
 name: execution_queue
 description: Transaction like execution queue to synchronize asynchronous jobs.
-version: 1.1.0
+version: 1.1.0+1
 homepage: https://github.com/fosscom/execution_queue
 
 environment:
@@ -11,3 +11,4 @@ environment:
 dev_dependencies:
   test: any
   pedantic: ^1.9.0
+  collection: any
