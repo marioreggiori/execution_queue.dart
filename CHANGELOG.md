@@ -21,3 +21,7 @@
 
 * Add example
 * Add dartdoc comments
+
+## [1.2.0] - 2021-03-12
+
+* make it null-safe
